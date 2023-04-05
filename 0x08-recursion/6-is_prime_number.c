@@ -6,7 +6,7 @@ int main_prime(int n, int val);
  * is_prime_number - says if an integer is a prime number or not
  * @n: number to evaluate
  *
- * Return: 1 if n is a prime number, 0 if it's a composite number 
+ * Return: 1 if n is a prime number, 0 if its composite
  */
 int is_prime_number(int n)
 {
@@ -20,7 +20,7 @@ int is_prime_number(int n)
  * @n: number to evaluate
  * @val: iterator value
  *
- * Return: 1 if n is prime, 0 if  it's a composite number 
+ * Return: 1 if n is prime, 0 if its composite
  */
 int main_prime(int n, int val)
 {

@@ -6,15 +6,25 @@
  * @str: char
  * Return: NULL if str = NULL
  */
-
 char *_strdup(char *str)
 {
-	char *copy = malloc(strlen(str) + 1);
+	char *copy;
+	int i, j = 0;
 
 	if (str == NULL)
 		return (NULL);
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+
+	copy = malloc(sizeof(char) * (i + 1));
+
 	if (copy == NULL)
 		return (NULL);
-	strcpy(copy, str);
+
+	for (j = 0; str[j]; j++)
+		copy[j] = str[j];
+
 	return (copy);
 }
+

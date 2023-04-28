@@ -23,13 +23,13 @@ list_t *create_new_node(const char *str, unsigned int len)
 }
 
 /**
- * add_node_end_alt - a function that a function that adds
+ * add_node_end - a function that a function that adds
  * a new node at the end of a list_t list.
  * @head: A double pointer to head node of linked list.
  * @str: The string to be added as the value of the new node.
- * Return: NOTHING
+ * Return: the address of the new element, or NULL if it failed
  */
-void add_node_end_alt(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node;
 	list_t *temp;
@@ -49,4 +49,5 @@ void add_node_end_alt(list_t **head, const char *str)
 			temp = (*temp).next;
 		(*temp).next = new_node;
 	}
+	return (new_node);
 }

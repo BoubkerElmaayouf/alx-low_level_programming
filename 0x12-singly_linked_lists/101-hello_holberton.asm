@@ -1,6 +1,7 @@
 ;this program prints Hello, Holberton, followed by a new line. in assebly code
 section .text
 	global main
+	extern    printf
 main:
 	mov edx, len
 	mov ecx, msg

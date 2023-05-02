@@ -11,8 +11,8 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	listint_t *curr = head;
 	unsigned int counter = 0;
-	
-	while (curr != NULL) 
+
+	while (curr != NULL)
 	{
 		if (counter == index)
 		{

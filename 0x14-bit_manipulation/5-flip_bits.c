@@ -9,7 +9,7 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	int i = sizeof(unsigned long int) * 8;
+	int i = (sizeof(unsigned long int) * 8) - 1;
 	int counter = 0;
 	unsigned long int current;
 	unsigned long int exclusive = n ^ m;

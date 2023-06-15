@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * dlistint_len - functin that prints all the 
+ * dlistint_len - functin that prints all the
  * elements of a dlistint_t list
  * @h: the head of the  double list
  * Return: number of elements

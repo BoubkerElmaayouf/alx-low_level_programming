@@ -1,1 +1,1 @@
-0x00. C - Hello, World
+# This repo containes almost all the 'C' Projects
